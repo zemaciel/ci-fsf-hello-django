@@ -27,7 +27,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-(cq0l-lz--!pwh44(dj8f6au*^($n@2g&$(&!sv$$doo(ot#rw'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 # ALLOWED_HOSTS = ['localhost', '8000-zemaciel-cifsfhellodjan-auhqmqk3z7k.ws-eu96b.gitpod.io']
 ALLOWED_HOSTS = ['joemac-to-do-app.herokuapp.com']
@@ -87,7 +87,7 @@ WSGI_APPLICATION = 'django_todo.wsgi.application'
 
 
 DATABASES = {
-    'default': dj_database_url.parse('os.environ.get("DATABASE_URL")')
+    'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
 
 
